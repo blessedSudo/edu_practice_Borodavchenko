@@ -82,8 +82,38 @@ rus-msk-r2:
 
 *Рис.7 Назначение доменного имени*
 
+rus-nsk-r1:
 
+<img width="255" height="15" alt="image" src="https://github.com/user-attachments/assets/27cc1aef-4ce3-44ab-a153-65b9439322f0" />
 
+*Рис.8 Назначение доменного имени*
+
+rus-nsk-sw1:
+
+<img width="467" height="77" alt="image" src="https://github.com/user-attachments/assets/b674c8f3-f3d3-4416-938e-1c2bc6aedee8" />
+
+*Рис.9 Назначеие доменного имени*
+
+rus-nsk-sw2:
+
+<img width="451" height="75" alt="image" src="https://github.com/user-attachments/assets/7ed0a68a-7483-4ff0-bd40-759af33412b1" />
+
+*Рис10 Назначение доменного имени*
+
+## Шаг 5 - Создание VLAN на коммутаторах в Нск
+
+Создаём VLAN 2, 3, 4 на коммутаторах
+rus-nsk-sw1:
+
+<img width="182" height="88" alt="image" src="https://github.com/user-attachments/assets/6acaa5ce-5b4f-4acf-8011-8c0162c809a2" />
+
+*Рис.11 Создание VLAN*
+
+rus-nsk-sw2:
+
+<img width="181" height="73" alt="image" src="https://github.com/user-attachments/assets/713dcc50-f7f6-45c9-be80-ae9edfa50ad3" />
+
+*Рис.12 Создание VLAN*
 
 
 
