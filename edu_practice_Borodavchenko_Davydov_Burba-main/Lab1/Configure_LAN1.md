@@ -209,14 +209,21 @@ rus-nsk-sw2:
 
 <img width="693" height="254" alt="image" src="https://github.com/user-attachments/assets/9b3bd92b-a67b-44f6-8fb0-03dfc539d53d" />
 
-## Шаг 16 
+*Рис.27 Отключение таймаута на коммутаторах*
+
+## Шаг 16 - Отключение прерывания
 
 <img width="692" height="257" alt="image" src="https://github.com/user-attachments/assets/2eb487b4-1338-42ea-86fb-d327f2bd4489" />
 
-## Шаг 17 
+*Рис.28 Отключение прерывания на коммутаторах*
+
+## Шаг 17 - Изменение размера буфера
 
 <img width="665" height="161" alt="image" src="https://github.com/user-attachments/assets/3925e0e4-6632-4673-a038-81272e5a970c" />
 
+*Рис.29 Изменение размера буфера на коммутаторах*
+
+№ Часть 2
 
 
 
