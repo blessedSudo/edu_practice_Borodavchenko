@@ -132,3 +132,17 @@ rus-nsk-sw2:
 <img width="634" height="395" alt="image" src="https://github.com/user-attachments/assets/f689dc40-9b74-45b9-8181-823c992cc868" />
 
 *Рис.15 Настройка VLAN на f0/2-4 на втором коммутаторе*
+
+## Шаг 7 - Создание канала между коммутаторами в Нск
+
+rus-nsk-sw1:
+
+<img width="620" height="393" alt="image" src="https://github.com/user-attachments/assets/3e242da6-40a2-4b82-8ad5-4c92e58c4bd6" />
+
+*Рис.16 настройка g0/1-2 на sw1*
+
+rus-nsk-sw2:
+
+<img width="614" height="368" alt="image" src="https://github.com/user-attachments/assets/e6b7a29c-7d36-434c-bdd4-affae5421aef" />
+
+*Рис.17 настройка g0/1-2 на sw2*
