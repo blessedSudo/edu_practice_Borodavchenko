@@ -115,5 +115,20 @@ rus-nsk-sw2:
 
 *Рис.12 Создание VLAN*
 
+## Шаг 6 - Назначение VLAN на интерфейсах
 
+rus-nsk-sw1:
 
+<img width="605" height="298" alt="image" src="https://github.com/user-attachments/assets/2a86a61c-46d0-43f2-abb7-f6a41631cd54" />
+
+*Рис.13 Настройка VLAN на f0/2 и f0/3 на первом коммутаторе*
+
+<img width="285" height="97" alt="image" src="https://github.com/user-attachments/assets/0928f4f9-2cfb-4510-972c-fd8874cba6b5" />
+
+*Рис.14 Настройка VLAN на f0/4 на первом коммутаторе*
+
+rus-nsk-sw2:
+
+<img width="634" height="395" alt="image" src="https://github.com/user-attachments/assets/f689dc40-9b74-45b9-8181-823c992cc868" />
+
+*Рис.15 Настройка VLAN на f0/2-4 на втором коммутаторе*
