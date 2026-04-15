@@ -146,3 +146,15 @@ rus-nsk-sw2:
 <img width="614" height="368" alt="image" src="https://github.com/user-attachments/assets/e6b7a29c-7d36-434c-bdd4-affae5421aef" />
 
 *Рис.17 настройка g0/1-2 на sw2*
+
+## Шаг 8 - Создание Management interface на sw1 для VLAN 1
+
+<img width="548" height="175" alt="image" src="https://github.com/user-attachments/assets/191eef49-f37c-4c6b-90a8-9d28cdd24faf" />
+
+*Рис.18 Создание Management interface на sw1*
+
+## Шаг 9 - Management interface на sw2 на VLAN 2
+
+<img width="547" height="171" alt="image" src="https://github.com/user-attachments/assets/da398c89-b383-4731-8388-ff2f5c108d28" />
+
+*Рис. 19 Создание Management interface на sw2*
