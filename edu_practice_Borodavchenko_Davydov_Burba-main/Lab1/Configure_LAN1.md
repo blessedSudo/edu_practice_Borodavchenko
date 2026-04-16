@@ -236,7 +236,22 @@ rus-nsk-sw2:
 
 *Рис.31 Настройка R1 для маршрутизации между VLAN*
 
-##
+## Шаг 3 - Настройка R1 в качетсве DHCP-сервера
+
+<img width="435" height="244" alt="изображение" src="https://github.com/user-attachments/assets/8a796154-e4a6-4bb8-ae4a-c79f316c77bb" />
+
+*Рис.32 исключение пула адресов*
+
+<img width="306" height="295" alt="изображение" src="https://github.com/user-attachments/assets/d79276dc-f005-40f3-8200-c30bfd408b00" />
+
+*Рис.33 Создание пула адресов для VLAN*
+
+## Шаг 4 - Проверка настройки 
+
+<img width="418" height="195" alt="изображение" src="https://github.com/user-attachments/assets/14f337b0-9b75-4336-a379-1e574ec0d39d" />
+
+*Рис.34 Проверка настройки с помощью пинга*
+
 
 
 
