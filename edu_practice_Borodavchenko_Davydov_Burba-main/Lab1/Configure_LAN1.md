@@ -38,8 +38,8 @@ rus-nsk-r1:
 <tr><td>router0</td><td>rus-msk-r1</td></tr>
 <tr><td>router1</td><td>rus-msk-r2</td></tr>
 <tr><td>Multilayer switch1</td><td>rus-msk-multisw1</td></tr>
-<tr><td>PC0</td><td>rus-msk-pc1</td></tr>
-<tr><td>PC1</td><td>rus-msk-pc2</td></tr>
+<tr><td>PC0</td><td>rus-msk-pc6</td></tr>
+<tr><td>PC1</td><td>rus-msk-pc7</td></tr>
 </table>
 
 </td>
@@ -51,12 +51,12 @@ rus-nsk-r1:
 <tr><td>router0</td><td>rus-nsk-r1</td></tr>
 <tr><td>switch0</td><td>rus-nsk-sw1</td></tr>
 <tr><td>switch1</td><td>rus-nsk-sw2</td></tr>
-<tr><td>PC0</td><td>rus-nsk-pc1</td></tr>
-<tr><td>PC1</td><td>rus-nsk-pc2</td></tr>
-<tr><td>PC2</td><td>rus-nsk-pc3</td></tr>
-<tr><td>PC3</td><td>rus-nsk-pc4</td></tr>
-<tr><td>PC4</td><td>rus-nsk-pc5</td></tr>
-<tr><td>PC5</td><td>rus-nsk-pc6</td></tr>
+<tr><td>PC0</td><td>rus-nsk-pc0</td></tr>
+<tr><td>PC1</td><td>rus-nsk-pc1</td></tr>
+<tr><td>PC2</td><td>rus-nsk-pc2</td></tr>
+<tr><td>PC3</td><td>rus-nsk-pc3</td></tr>
+<tr><td>PC4</td><td>rus-nsk-pc4</td></tr>
+<tr><td>PC5</td><td>rus-nsk-pc5</td></tr>
 </table>
 
 </td>
@@ -297,6 +297,65 @@ rus-nsk-sw2:
 *Рис.41 Проверка настройки пингом*
 
 # Часть 4
+## Шаг 1 - Настройка интерфейсов f0/0 и f0/1 на R1 в Москве
+
+<img width="320" height="85" alt="изображение" src="https://github.com/user-attachments/assets/49b46e54-e551-42ca-a9b3-d4d9cd29e7b9" />
+
+*Рис.42 Настройка интерфейсво на R1*
+
+## Шаг 2 - Настройка интерфейсов f0/0 и f0/1 на R2 в Москве
+
+<img width="443" height="143" alt="изображение" src="https://github.com/user-attachments/assets/ad88b408-a126-406e-991a-65f5b17b1a18" />
+
+*Рис.43 Настройка интерфейсво на R2*
+
+## Шаг 3 - Настройка Cisco High availability на R1 и R2
+
+rus-msk-r1:
+
+<img width="335" height="132" alt="изображение" src="https://github.com/user-attachments/assets/75f84dd2-460f-43d0-b0d2-461a6cf0fe2f" />
+
+*Рис.44  Настройка Cisco High availability на R1*
+
+rus-msk-r2:
+
+<img width="267" height="57" alt="изображение" src="https://github.com/user-attachments/assets/1d29a985-1c37-47d6-bc65-3c9143d2c55d" />
+
+*Рис. 45 Настройка Cisco High availability на R2*
+
+# Часть 5
+## Шаг 1 - Настройка EIGRP
+rus-nsk-r1:
+
+<img width="335" height="101" alt="изображение" src="https://github.com/user-attachments/assets/f681d454-9015-431b-97a6-3228db5a4e04" />
+
+*Рис.46 настройка EIGRP на R1 в Нск*
+
+rus-msk-r1:
+
+<img width="354" height="57" alt="изображение" src="https://github.com/user-attachments/assets/aca5177d-c4ee-4b26-a14b-489cca772f7b" />
+
+*Рис.47 настройка EIGRP на R1 в Москве*
+
+rus-msk-r2:
+
+<img width="353" height="43" alt="изображение" src="https://github.com/user-attachments/assets/e35341a3-cc36-462b-b4b9-399d0a62a151" />
+
+*Рис.48 настройка EIGRP на R2 в Москве*
+
+rus-msk-multisw1:
+
+<img width="623" height="248" alt="изображение" src="https://github.com/user-attachments/assets/114e32a7-aed1-4f04-be47-3a8c03883683" />
+
+*Рис.49 настройка EIGRP на multisw1*
+
+##
+
+
+
+
+
+
 
 
 
