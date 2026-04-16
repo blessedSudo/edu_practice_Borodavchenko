@@ -351,6 +351,26 @@ rus-msk-multisw1:
 
 ## Шаг 2 - Проверка с помощью SSH
 
+Подключение SSH с сервера на sw1:
+
+<img width="182" height="102" alt="изображение" src="https://github.com/user-attachments/assets/e6e1d816-a440-4dd5-b3c4-9ee41d7d9915" />
+
+*Рис.50 SSH на sw1*
+
+Подключение SSH с сервера на sw2:
+
+<img width="188" height="99" alt="изображение" src="https://github.com/user-attachments/assets/319a37dc-620c-40d6-992a-e67bc180034c" />
+
+*Рис.51 SSH на sw2*
+
+## Шаг 3 - Пинг с сервера:
+
+<img width="402" height="189" alt="изображение" src="https://github.com/user-attachments/assets/39b707e5-ed4f-4911-b0e0-b1de627e194a" />
+
+*Рис.52 Пинг с сервера*
+
+
+
 
 
 
