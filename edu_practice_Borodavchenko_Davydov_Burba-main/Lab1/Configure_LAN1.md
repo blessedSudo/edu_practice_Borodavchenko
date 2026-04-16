@@ -232,6 +232,11 @@ rus-nsk-sw2:
 
 ## Шаг 2 - Настройка маршрутизации между VLAN 1, 2, 3, 4 на R1
 
+<img width="437" height="311" alt="изображение" src="https://github.com/user-attachments/assets/058e079c-d625-4cf3-9447-7f7f02574c16" />
+
+*Рис.31 Настройка R1 для маршрутизации между VLAN*
+
+##
 
 
 
