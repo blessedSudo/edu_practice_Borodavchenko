@@ -2,7 +2,9 @@
 # Часть 1
 ## Шаг 1 - Схема сети
 Создаём топологию сети, в которую входят 2 города
-<img width="1947" height="760" alt="image" src="https://github.com/user-attachments/assets/b97ffbdf-ba91-46ad-8949-521aaada4637" />
+
+<img width="1946" height="765" alt="image" src="https://github.com/user-attachments/assets/0091f8c8-ba45-4864-87f5-c86a030b886a" />
+
 *Рис.1 топология сети*
 
 ## Шаг 2 - Создание сообщения на роутерах
@@ -557,7 +559,7 @@ rus-msk-r2:
 
 <img width="233" height="16" alt="image" src="https://github.com/user-attachments/assets/e94b7ef9-c161-4e19-ad11-2950ebbf0d2e" />
 
-*Рис.77 Пароль для привилегерованного режима*
+*Рис.77 Пароль для привилегерованного режима.*
 
 Дальше можем подключаться по telnet.
 
@@ -568,7 +570,33 @@ rus-msk-r1:
 *Рис.78 Подключение к R2 по telnet*
 
 ## Шаг 9 - Изменение локального имени пользователя в R2
-rus-msk-r2:
+Для начала вводим команду для игнорирования конфигурации при загрузке. Вся настройка происходит на rus-msk-r2.
+
+<img width="195" height="35" alt="image" src="https://github.com/user-attachments/assets/76202214-a736-4576-ba0b-512e57d4ddc1" />
+
+*Рис.79 Ввод команды для игнорирования конфигурации при загрузке.*
+
+Дальше предложит войти в диалоговое окно начальнйо настойки, нужно отказаться.
+
+<img width="531" height="20" alt="image" src="https://github.com/user-attachments/assets/f4deac0f-50e0-42bf-a942-b4a7360d01d5" />
+
+*Рис.80 Отказ от входа в диалоговое окно начальной настройки*
+
+Затем загружаем старую конфигурацию и изменяем имя пользователя 
+
+<img width="639" height="243" alt="image" src="https://github.com/user-attachments/assets/4362e2a0-10ad-4a8e-b0b2-e5ffe290e6a8" />
+
+*Рис.81 загрузка старой конфигурации
+
+Возвращаем значение конфигурационного регистра.
+
+<img width="242" height="20" alt="image" src="https://github.com/user-attachments/assets/80cd64a1-1723-4984-97d4-ea201ca975ea" />
+
+*Рис.82 Возвращение значения конфигурационного регистра.
+
+
+
+
 
 
 
