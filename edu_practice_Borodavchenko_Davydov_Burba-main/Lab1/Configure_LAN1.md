@@ -594,6 +594,966 @@ rus-msk-r1:
 
 *Рис.82 Возвращение значения конфигурационного регистра.
 
+# Полная конфигурация устройств
+rus-msk-r1
+```
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname R1
+!
+!
+!
+!
+!
+!
+!
+!
+no ip cef
+no ipv6 cef
+!
+!
+!
+!
+license udi pid CISCO2811/K9 sn FTX10173D5Q-
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip ftp username cisco
+ip ftp password cisco
+ip domain-name msk.local
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ ip address 10.0.0.2 255.0.0.0
+ ip access-group 120 in
+ duplex auto
+ speed auto
+ standby 1 ip 10.0.0.1
+ standby 1 preempt
+ standby 1 track FastEthernet0/1
+!
+interface FastEthernet0/1
+ ip address 11.0.0.2 255.0.0.0
+ ip access-group 120 in
+ duplex auto
+ speed auto
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router eigrp 100
+ network 10.0.0.0
+ network 11.0.0.0
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+access-list 120 permit icmp any any echo-reply
+access-list 120 deny icmp any any echo
+access-list 120 permit ip any any
+!
+banner motd #Rabotu vypolnili Borodavchenko Daniil, Davydov Matvey, Burba Ulyana studenty gruppy 9SA-321, v zhurnale pod nomerami 5, 6, 8!#
+!
+!
+!
+snmp-server community cisco RW
+!
+logging 10.0.0.100
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+ntp authentication-key 1 md5 0822455D0A16 7
+ntp authenticate
+ntp trusted-key 1
+ntp server 10.0.0.100 key 1
+!
+end
+
+
+```
+rus-msk-r2:
+```
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname R2
+!
+!
+!
+enable secret 5 $1$mERr$hx5rVt7rPNoS4wqbXKX7m0
+!
+!
+!
+!
+!
+aaa new-model
+!
+aaa authentication login TELNET_AUTH group radius local 
+!
+!
+!
+!
+!
+!
+!
+no ip cef
+no ipv6 cef
+!
+!
+!
+username newadmin secret 5 $1$mERr$y1xCpu9vTanV1oFENCDrX0
+username standby secret 5 $1$mERr$hx5rVt7rPNoS4wqbXKX7m0
+!
+!
+license udi pid CISCO2811/K9 sn FTX10177M0D-
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip domain-name msk.local
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 192.168.103.3 255.255.255.0
+!
+interface Tunnel0
+ ip address 200.200.200.3 255.255.255.0
+ mtu 1476
+ tunnel source FastEthernet0/0
+ tunnel destination 40.40.40.1
+!
+!
+interface FastEthernet0/0
+ ip address 10.0.0.3 255.0.0.0
+ ip access-group 120 in
+ duplex auto
+ speed auto
+ standby 1 ip 10.0.0.1
+ standby 1 preempt
+!
+interface FastEthernet0/1
+ ip address 12.0.0.3 255.0.0.0
+ ip access-group 120 in
+ duplex auto
+ speed auto
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router eigrp 100
+ network 10.0.0.0
+ network 12.0.0.0
+!
+router rip
+ version 2
+ network 192.168.103.0
+ network 200.200.200.0
+ no auto-summary
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+access-list 120 permit icmp any any echo-reply
+access-list 120 deny icmp any any echo
+access-list 120 permit ip any any
+!
+banner motd #Rabotu vypolnili Borodavchenko Daniil, Davydov Matvey, Burba Ulyana studenty gruppy 9SA-321, v zhurnale pod nomerami 5, 6, 8!#
+!
+radius server 10.0.0.100
+ address ipv4 10.0.0.100 auth-port 1645
+ key cisco
+!
+!
+snmp-server community cisco RW
+!
+logging 10.0.0.100
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login authentication TELNET_AUTH
+ transport input telnet
+!
+!
+ntp authentication-key 1 md5 0822455D0A16 7
+ntp authenticate
+ntp trusted-key 1
+ntp server 10.0.0.100 key 1
+!
+end
+
+
+```
+rus-msk-sw1:
+```
+!
+version 15.0
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname SW1
+!
+!
+!
+ip domain-name msk.local
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+interface FastEthernet0/1
+!
+interface FastEthernet0/2
+!
+interface FastEthernet0/3
+!
+interface FastEthernet0/4
+!
+interface FastEthernet0/5
+!
+interface FastEthernet0/6
+!
+interface FastEthernet0/7
+!
+interface FastEthernet0/8
+!
+interface FastEthernet0/9
+!
+interface FastEthernet0/10
+!
+interface FastEthernet0/11
+!
+interface FastEthernet0/12
+!
+interface FastEthernet0/13
+!
+interface FastEthernet0/14
+!
+interface FastEthernet0/15
+!
+interface FastEthernet0/16
+!
+interface FastEthernet0/17
+!
+interface FastEthernet0/18
+!
+interface FastEthernet0/19
+!
+interface FastEthernet0/20
+!
+interface FastEthernet0/21
+!
+interface FastEthernet0/22
+!
+interface FastEthernet0/23
+!
+interface FastEthernet0/24
+!
+interface GigabitEthernet0/1
+!
+interface GigabitEthernet0/2
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+!
+!
+!
+line con 0
+!
+line vty 0 4
+ login
+line vty 5 15
+ login
+!
+!
+!
+!
+end
+```
+rus-msk-multisw1:
+```
+!
+version 12.2(37)SE1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname MLS
+!
+!
+!
+!
+!
+!
+ip routing
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/1
+ no switchport
+ ip address 11.0.0.50 255.0.0.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/2
+ no switchport
+ ip address 12.0.0.50 255.0.0.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/3
+ no switchport
+ ip address 40.40.40.50 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/4
+ switchport access vlan 100
+ switchport mode access
+!
+interface FastEthernet0/5
+ switchport access vlan 200
+ switchport mode access
+!
+interface FastEthernet0/6
+!
+interface FastEthernet0/7
+!
+interface FastEthernet0/8
+!
+interface FastEthernet0/9
+!
+interface FastEthernet0/10
+!
+interface FastEthernet0/11
+!
+interface FastEthernet0/12
+!
+interface FastEthernet0/13
+!
+interface FastEthernet0/14
+!
+interface FastEthernet0/15
+!
+interface FastEthernet0/16
+!
+interface FastEthernet0/17
+!
+interface FastEthernet0/18
+!
+interface FastEthernet0/19
+!
+interface FastEthernet0/20
+!
+interface FastEthernet0/21
+!
+interface FastEthernet0/22
+!
+interface FastEthernet0/23
+!
+interface FastEthernet0/24
+!
+interface GigabitEthernet0/1
+!
+interface GigabitEthernet0/2
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan100
+ mac-address 000c.cf1e.8501
+ ip address 100.0.0.50 255.0.0.0
+!
+interface Vlan200
+ mac-address 000c.cf1e.8502
+ ip address 200.0.0.50 255.255.255.0
+!
+router eigrp 100
+ network 11.0.0.0
+ network 12.0.0.0
+ network 40.40.40.0 0.0.0.255
+ network 100.0.0.0
+ network 200.0.0.0
+ no auto-summary
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+!
+end
+
+```
+rus-nsk-r1:
+```
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname R1
+!
+!
+!
+!
+ip dhcp excluded-address 1.0.0.1 1.0.0.99
+ip dhcp excluded-address 1.0.0.201 1.0.0.254
+ip dhcp excluded-address 2.0.0.1 2.0.0.99
+ip dhcp excluded-address 2.0.0.201 2.0.0.254
+ip dhcp excluded-address 3.0.0.1 3.0.0.99
+ip dhcp excluded-address 3.0.0.201 3.0.0.254
+ip dhcp excluded-address 4.0.0.1 4.0.0.99
+ip dhcp excluded-address 4.0.0.201 4.0.0.254
+!
+ip dhcp pool VLAN1
+ network 1.0.0.0 255.0.0.0
+ default-router 1.0.0.1
+ dns-server 8.8.8.8
+ip dhcp pool VLAN2
+ network 2.0.0.0 255.0.0.0
+ default-router 2.0.0.1
+ dns-server 8.8.8.8
+ip dhcp pool VLAN3
+ network 3.0.0.0 255.0.0.0
+ default-router 3.0.0.1
+ dns-server 8.8.8.8
+ip dhcp pool VLAN4
+ network 4.0.0.0 255.0.0.0
+ default-router 4.0.0.1
+ dns-server 8.8.8.8
+!
+!
+!
+no ip cef
+no ipv6 cef
+!
+!
+!
+!
+license udi pid CISCO2811/K9 sn FTX1017ZTUG-
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip domain-name nsk.local
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 192.168.101.1 255.255.255.0
+!
+interface Tunnel0
+ ip address 200.200.200.1 255.255.255.0
+ mtu 1476
+ tunnel source FastEthernet0/1
+ tunnel destination 10.0.0.3
+!
+!
+interface FastEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/0.1
+ encapsulation dot1Q 1 native
+ ip address 1.0.0.1 255.0.0.0
+!
+interface FastEthernet0/0.2
+ encapsulation dot1Q 2
+ ip address 2.0.0.1 255.0.0.0
+ ip access-group 110 in
+!
+interface FastEthernet0/0.3
+ encapsulation dot1Q 3
+ ip address 3.0.0.1 255.0.0.0
+!
+interface FastEthernet0/0.4
+ encapsulation dot1Q 4
+ ip address 4.0.0.1 255.0.0.0
+!
+interface FastEthernet0/1
+ ip address 40.40.40.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router eigrp 100
+ network 1.0.0.0
+ network 2.0.0.0
+ network 3.0.0.0
+ network 4.0.0.0
+ network 40.40.40.0 0.0.0.255
+!
+router rip
+ version 2
+ network 192.168.101.0
+ network 200.200.200.0
+ no auto-summary
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+access-list 110 permit tcp host 2.0.0.100 host 10.0.0.100 eq www
+access-list 110 deny tcp 2.0.0.0 0.255.255.255 host 10.0.0.100 eq www
+access-list 110 permit ip any any
+!
+banner motd #Rabotu vypolnili Borodavchenko Daniil, Davydov Matvey, Burba Ulyana studenty gruppy 9SA-321, v zhurnale pod nomerami 5, 6, 8!#
+!
+!
+!
+!
+logging 10.0.0.100
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+ntp authentication-key 1 md5 0822455D0A16 7
+ntp authenticate
+ntp trusted-key 1
+ntp server 10.0.0.100 key 1
+!
+end
+```
+rus-nsk-sw1:
+```
+!
+version 15.0
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname SW1
+!
+!
+!
+ip ssh version 2
+ip domain-name nsk.local
+!
+username nsk secret 5 $1$mERr$hx5rVt7rPNoS4wqbXKX7m0
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+interface Port-channel1
+ switchport mode trunk
+!
+interface FastEthernet0/1
+!
+interface FastEthernet0/2
+ switchport access vlan 2
+ switchport mode access
+ switchport port-security mac-address sticky 
+ no cdp enable
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface FastEthernet0/3
+ switchport access vlan 3
+ switchport mode access
+ switchport port-security mac-address sticky 
+ no cdp enable
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface FastEthernet0/4
+ switchport access vlan 4
+ switchport mode access
+ switchport port-security mac-address sticky 
+ no cdp enable
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface FastEthernet0/5
+!
+interface FastEthernet0/6
+!
+interface FastEthernet0/7
+!
+interface FastEthernet0/8
+!
+interface FastEthernet0/9
+!
+interface FastEthernet0/10
+!
+interface FastEthernet0/11
+!
+interface FastEthernet0/12
+!
+interface FastEthernet0/13
+!
+interface FastEthernet0/14
+!
+interface FastEthernet0/15
+!
+interface FastEthernet0/16
+!
+interface FastEthernet0/17
+!
+interface FastEthernet0/18
+!
+interface FastEthernet0/19
+!
+interface FastEthernet0/20
+!
+interface FastEthernet0/21
+!
+interface FastEthernet0/22
+!
+interface FastEthernet0/23
+!
+interface FastEthernet0/24
+ switchport mode trunk
+!
+interface GigabitEthernet0/1
+ switchport mode trunk
+ channel-group 1 mode active
+!
+interface GigabitEthernet0/2
+ switchport mode trunk
+ channel-group 1 mode active
+!
+interface Vlan1
+ ip address 1.0.0.50 255.0.0.0
+!
+ip default-gateway 1.0.0.1
+!
+banner motd #Eto rus-nsk-sw1#
+!
+!
+!
+access-list 10 permit host 10.0.0.100
+access-list 10 permit host 2.0.0.100
+line con 0
+ logging synchronous
+ login local
+ history size 256
+ exec-timeout 0 0
+!
+line vty 0 4
+ access-class 10 in
+ exec-timeout 0 0
+ login local
+ transport input ssh
+line vty 5 15
+ access-class 10 in
+ exec-timeout 0 0
+ login local
+ transport input ssh
+!
+!
+!
+!
+end
+```
+rus-nsk-sw2:
+```
+!
+version 15.0
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname SW2
+!
+!
+!
+ip ssh version 2
+ip domain-name nsk.local
+!
+username nsk secret 5 $1$mERr$hx5rVt7rPNoS4wqbXKX7m0
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+interface Port-channel1
+ switchport mode trunk
+!
+interface FastEthernet0/1
+ shutdown
+!
+interface FastEthernet0/2
+ switchport access vlan 2
+ switchport mode access
+ switchport port-security mac-address sticky 
+ no cdp enable
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface FastEthernet0/3
+ switchport access vlan 3
+ switchport mode access
+ switchport port-security mac-address sticky 
+ no cdp enable
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface FastEthernet0/4
+ switchport access vlan 4
+ switchport mode access
+ switchport port-security mac-address sticky 
+ no cdp enable
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface FastEthernet0/5
+!
+interface FastEthernet0/6
+!
+interface FastEthernet0/7
+!
+interface FastEthernet0/8
+!
+interface FastEthernet0/9
+!
+interface FastEthernet0/10
+!
+interface FastEthernet0/11
+!
+interface FastEthernet0/12
+!
+interface FastEthernet0/13
+!
+interface FastEthernet0/14
+!
+interface FastEthernet0/15
+!
+interface FastEthernet0/16
+!
+interface FastEthernet0/17
+!
+interface FastEthernet0/18
+!
+interface FastEthernet0/19
+!
+interface FastEthernet0/20
+!
+interface FastEthernet0/21
+!
+interface FastEthernet0/22
+!
+interface FastEthernet0/23
+!
+interface FastEthernet0/24
+!
+interface GigabitEthernet0/1
+ switchport mode trunk
+ channel-group 1 mode passive
+!
+interface GigabitEthernet0/2
+ switchport mode trunk
+ channel-group 1 mode passive
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan2
+ ip address 2.0.0.50 255.0.0.0
+!
+ip default-gateway 2.0.0.1
+!
+banner motd #Eto rus-nsk-sw2#
+!
+!
+!
+access-list 10 permit host 10.0.0.100
+access-list 10 permit host 2.0.0.100
+line con 0
+ logging synchronous
+ login local
+ history size 256
+ exec-timeout 0 0
+!
+line vty 0 4
+ access-class 10 in
+ exec-timeout 0 0
+ login local
+ transport input ssh
+line vty 5 15
+ access-class 10 in
+ exec-timeout 0 0
+ login local
+ transport input ssh
+!
+!
+!
+!
+end
+```
+rus-msk-serv1:
+
+<img width="690" height="424" alt="image" src="https://github.com/user-attachments/assets/d8cac5cb-6825-4469-a5dc-2ce40eb6735c" />
+
+*Рис.83 IP-конфигурация сервера*
+
+rus-msk-pc6:
+
+<img width="686" height="476" alt="image" src="https://github.com/user-attachments/assets/9ba36e70-dc3e-432c-b70d-44021b406d84" />
+
+*Рис.84 IP-конфигурация пк6*
+
+rus-msk-pc7:
+
+<img width="697" height="451" alt="image" src="https://github.com/user-attachments/assets/c7f0e88f-b92b-47d4-8a5f-9c8316e3d9a8" />
+
+*Рис.85 IP-конфигурция пк7*
+
+rus-nsk-pc0:
+
+<img width="685" height="447" alt="image" src="https://github.com/user-attachments/assets/102da92f-bbc7-4cae-88d9-73fafc3d1c18" />
+
+*Рис.86 IP-конфигурация пк0*
+
+rus-nsk-pc1:
+
+<img width="692" height="445" alt="image" src="https://github.com/user-attachments/assets/7a1b9748-52a6-4a7f-9dc8-43f0d00d5667" />
+
+*Рис.87 IP-конфигурация пк1*
+
+rus-nsk-pc2:
+
+<img width="694" height="450" alt="image" src="https://github.com/user-attachments/assets/d4c7455a-8745-4f20-a181-e35b227e024e" />
+
+*Рис.88 IP-конфигурация пк2*
+
+rus-nsk-pc3:
+
+<img width="698" height="318" alt="image" src="https://github.com/user-attachments/assets/173b0026-8b5e-4b6e-96a3-34452075d1c7" />
+
+*Рис.89 IP-конфигурация пк3*
+
+rus-nsk-pc4:
+
+<img width="694" height="449" alt="image" src="https://github.com/user-attachments/assets/2cb44686-cf06-4b46-9923-a39867b2b374" />
+
+*Рис.90 IP-конфигурация пк4
+
+rus-nsk-pc5:
+
+<img width="699" height="461" alt="image" src="https://github.com/user-attachments/assets/58c652ce-5cc5-4f5c-b293-9f949f181707" />
+
+*Рис.91 IP-конфигурация пк5*
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
