@@ -222,3 +222,49 @@ R3:
 
 ## Шаг 2 - Проверка на PC0
 
+<img width="404" height="281" alt="изображение" src="https://github.com/user-attachments/assets/66ceae73-1b8d-4148-a42e-401ca788d479" />
+
+*Рис.38 IP Configuration на PC0*
+
+# Часть 7
+## Шаг 1 - Настройка маршрутизаторов R1, R2, R3, R1973 с IPv6-адресами
+
+<img width="446" height="171" alt="изображение" src="https://github.com/user-attachments/assets/6afc06e8-d8c9-4e1d-a797-ce1413ffa503" />
+
+*Рис.39 Настройка IPv6 на R1*
+
+<img width="445" height="134" alt="изображение" src="https://github.com/user-attachments/assets/3a0900f1-7cea-4030-aa96-eee06cd0405f" />
+
+*Рис.40 Настройка IPv6 на R2*
+
+<img width="445" height="121" alt="изображение" src="https://github.com/user-attachments/assets/a15796b9-9808-4841-baac-daab247abf63" />
+
+*Рис.41 Настройка IPv6 на R3*
+
+<img width="443" height="117" alt="изображение" src="https://github.com/user-attachments/assets/aa490ed6-7da0-4a17-ab1c-b2268b832479" />
+
+*Рис.42 Настройка IPv6 на R1973*
+
+## Шаг 2 - включение маршрутизации ipv6
+
+<img width="229" height="16" alt="изображение" src="https://github.com/user-attachments/assets/b307b388-f2ff-4738-932f-a5f989f269c9" />
+
+*Рис.43 Включение на R1*
+
+<img width="252" height="13" alt="изображение" src="https://github.com/user-attachments/assets/9565498b-614b-4c17-a32b-637401f67e9a" />
+
+*Рис.44 Включение на R2*
+
+<img width="227" height="17" alt="изображение" src="https://github.com/user-attachments/assets/2752708d-ec5b-4a8d-8f66-22667c396ae3" />
+
+*Рис.45 Включение на R3*
+
+<img width="265" height="18" alt="изображение" src="https://github.com/user-attachments/assets/1d8199da-89cb-41fd-a59b-df355e5f2c4d" />
+
+*Рис.46 Включение на R1973*
+
+## Шаг 3 - Проверка f0/0 на R1
+
+<img width="257" height="84" alt="изображение" src="https://github.com/user-attachments/assets/9f8d67ac-44d5-41c4-b1ef-3eaabbb292ee" />
+
+*Рис.47 Проверка f0/0*
