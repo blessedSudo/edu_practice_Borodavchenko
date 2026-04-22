@@ -268,3 +268,130 @@ R3:
 <img width="257" height="84" alt="изображение" src="https://github.com/user-attachments/assets/9f8d67ac-44d5-41c4-b1ef-3eaabbb292ee" />
 
 *Рис.47 Проверка f0/0*
+
+## Шаг 4 - Проверка использования EUI-64 на f0/0
+
+<img width="393" height="142" alt="изображение" src="https://github.com/user-attachments/assets/90892dbe-c5cf-471f-8f13-2e4b86697ee2" />
+
+*Рис.48 Проверка использования EUI-64 на f0/0*
+
+# Часть 8
+
+## Шаг 1 - Настройка OSPFv3
+
+R1:
+
+<img width="223" height="18" alt="изображение" src="https://github.com/user-attachments/assets/52cec44a-f4b9-4cc6-9127-46c4ac2b3282" />
+
+*Рис.49 Настройка OSPFv3*
+
+R2:
+
+<img width="225" height="27" alt="изображение" src="https://github.com/user-attachments/assets/dacaca94-cf4b-4fc5-b511-ee01c5e3ebbd" />
+
+*Рис.50 Настройка OSPFv3*
+
+R3:
+
+<img width="228" height="12" alt="изображение" src="https://github.com/user-attachments/assets/81d5e912-c875-49cc-9340-3b698cc8c6c9" />
+
+*Рис.51 Настройка OSPFv3*
+
+## Шаг 2 - Назначения Router-id
+
+<img width="232" height="15" alt="изображение" src="https://github.com/user-attachments/assets/bfb0d02c-a0b9-45f0-9998-283b71d37924" />
+
+*Рис.52 Назначение router-id на R1*
+
+<img width="238" height="15" alt="изображение" src="https://github.com/user-attachments/assets/27f36f60-1126-42f5-9483-70d6885a9d0d" />
+
+*Рис.53 Назначение router-id на R2*
+
+<img width="238" height="16" alt="изображение" src="https://github.com/user-attachments/assets/b95f68b1-306a-48ea-8996-20daeefc1026" />
+
+*Рис.54 Назначение router-id на R3*
+
+## Шаг 3 - Настройка Area на R1
+
+<img width="269" height="74" alt="изображение" src="https://github.com/user-attachments/assets/06ff3c6d-235b-490d-ba54-6f0267c2d7f0" />
+
+*Рис.55 Настройка area на R1*
+
+## Шаг 4 - Настройка area на R2
+
+<img width="278" height="68" alt="изображение" src="https://github.com/user-attachments/assets/0190a1e2-e04d-475d-a86a-b3f43f44cae6" />
+
+*Рис.56 Настройка area на R2*
+
+## Шаг 5 - Настройка area на R3
+
+<img width="257" height="14" alt="изображение" src="https://github.com/user-attachments/assets/ff2ba561-805c-4686-b5d7-8d22c6f9d4b7" />
+
+*Рис.57 Настройка area на R3*
+
+## Шаг 6 - Запрет на Hello-сообщения
+
+<img width="607" height="141" alt="изображение" src="https://github.com/user-attachments/assets/ea99d59b-db85-4567-bdb8-2076542aab09" />
+
+*Рис.58 Запрет Hello-сообщений на R1*
+
+## Шаг 7 - Настройка R3 как шлюз по умолчанию
+
+<img width="334" height="80" alt="изображение" src="https://github.com/user-attachments/assets/624f3776-352a-4cf8-b940-391eaf4de921" />
+
+*Рис.59 Настройка R3 как шлюз по умолчанию*
+
+<img width="581" height="59" alt="изображение" src="https://github.com/user-attachments/assets/d3db83ba-1029-43e5-ba93-aa3473a35cfe" />
+
+*Рис.60 Проверка OSPFv3*
+
+# Часть 9
+## Шаг 1 - Настройка EIGRPv6 между R3 и R1973
+
+<img width="442" height="46" alt="изображение" src="https://github.com/user-attachments/assets/f477c7d6-a603-45e1-b72f-572240b9ba17" />
+
+*Рис.61 Настройка EIGRPv6 на R3*
+
+<img width="437" height="44" alt="изображение" src="https://github.com/user-attachments/assets/500ca74c-d577-45e8-9976-a659edd869e8" />
+
+*Рис.62 Настройка EIGRPv6 на R1973*
+
+## Шаг 2 - Задать номер автономной системы
+
+<img width="264" height="18" alt="изображение" src="https://github.com/user-attachments/assets/e4b41e33-525d-4ed1-83c9-912bb5e6287f" />
+
+*Рис.63 Выдача номера на R3*
+
+<img width="291" height="15" alt="изображение" src="https://github.com/user-attachments/assets/77a69b9e-0ed5-483e-895b-3d603e214849" />
+
+*Рис.64 Выдача номера на R1973*
+
+## Шаг 3 - Назначение router-id
+
+<img width="276" height="34" alt="изображение" src="https://github.com/user-attachments/assets/14db794e-9311-4c19-b6a7-0afd94b57d14" />
+
+*Рис.65 Назначение на R3*
+
+<img width="300" height="27" alt="изображение" src="https://github.com/user-attachments/assets/f5773750-a589-4576-baf3-4084c18d479d" />
+
+*Рис.66 Назначение на R1973*
+
+## Шаг 4 - Объявление loopback 
+
+<img width="243" height="71" alt="изображение" src="https://github.com/user-attachments/assets/243bfec2-7cf3-4d8d-9a46-85e0a3e31542" />
+
+*Рис.67 Объявляем loopback на R1973*
+
+<img width="209" height="31" alt="изображение" src="https://github.com/user-attachments/assets/e488abaa-abd6-47c2-a61e-1d6d7667d781" />
+
+*Рис.68 Объявляем loopback на R3*
+
+## Шаг 5 - Настройка ipv6 маршрут по умолчанию
+
+<img width="346" height="17" alt="изображение" src="https://github.com/user-attachments/assets/fb11580b-9fe8-4053-b6ed-22cde60361c8" />
+
+*Рис.69 Настраиваем на R1973*
+
+<img width="547" height="100" alt="изображение" src="https://github.com/user-attachments/assets/86403f5a-cd39-4ee9-a4cc-11d0db6670b9" />
+
+*Рис.70 Проверка на R3*
