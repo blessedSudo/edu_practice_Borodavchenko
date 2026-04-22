@@ -135,16 +135,35 @@ R3:
 
 *Рис.22 Назначение R3 шлюзом по умолчанию для OSPF*
 
+# Часть 4
+## Шаг 1 - Настройка BGP
 
+<img width="437" height="57" alt="изображение" src="https://github.com/user-attachments/assets/fe9d16b9-3bab-4ac1-816e-3a4897b55f75" />
 
+*Рис.23 Заходим в BGP на R3*
 
+<img width="228" height="35" alt="изображение" src="https://github.com/user-attachments/assets/e85c9382-66fb-437a-aa78-d36f53171cb7" />
 
+*Рис.24 Заходим в BGP на R1973*
 
+## Шаг 2 - Настраиваем соседство BGP 
 
+<img width="401" height="16" alt="изображение" src="https://github.com/user-attachments/assets/6c39c360-f121-4975-8a39-fe0078252e13" />
 
+*Рис.25 Добавляем соседство на R3*
 
+<img width="470" height="30" alt="изображение" src="https://github.com/user-attachments/assets/2b22c7ad-b58c-4365-ac81-19ca0290c724" />
 
+*Рис.26 Добавляем соседство на R1973*
 
+## Шаг 3 - Объявляем loopback
 
+<img width="418" height="15" alt="изображение" src="https://github.com/user-attachments/assets/9735afee-120b-4d90-8c51-f20cbe664ff6" />
 
+*Рис.27 Добавляем loopback на R1973*
 
+## Шаг 4 - Настройка маршрута по умолчанию
+
+<img width="353" height="42" alt="изображение" src="https://github.com/user-attachments/assets/9515e671-6c57-49f9-9be2-7477791ff7cc" />
+
+*Рис.28 Создаём маршрут по умолчанию на R1973*
