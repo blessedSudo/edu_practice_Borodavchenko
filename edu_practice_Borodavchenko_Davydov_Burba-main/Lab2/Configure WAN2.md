@@ -212,3 +212,13 @@ R3:
 <img width="424" height="47" alt="изображение" src="https://github.com/user-attachments/assets/d5f28264-40ce-4c7d-ab72-bbf2b42805c0" />
 
 *Рис.36 Перезагрузка маршрутизатора*
+
+# Часть 6
+## Шаг 1 - Настройка R1 в качестве DHCP-ретранслятора
+
+<img width="432" height="91" alt="изображение" src="https://github.com/user-attachments/assets/6948cd09-4d35-4c1f-862f-b3cf95b3d75d" />
+
+*Рис.37 Настройка R1*
+
+## Шаг 2 - Проверка на PC0
+
