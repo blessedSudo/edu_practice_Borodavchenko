@@ -1,0 +1,149 @@
+# Лабораторная работы №2. Базовая настройка IP-телефонов в среде Cisco
+## Шаг 1 - Создание топология
+
+<img width="734" height="536" alt="image" src="https://github.com/user-attachments/assets/21a96209-ecf8-4c75-b93b-a5688d0dc30f" />
+
+*Рис.1 Топология*
+
+## Шаг 2 - Переименование устройства
+
+<img width="433" height="77" alt="image" src="https://github.com/user-attachments/assets/89fd1304-c2c3-464f-9d67-1db5c883a424" />
+
+*Рис.2 Назначение имени*
+
+## Шаг 3 - Отключение DNS lookup
+
+<img width="299" height="14" alt="image" src="https://github.com/user-attachments/assets/6bdaa9f3-cb03-48b5-9dcb-c382aa326e41" />
+
+*Рис.3 Отключение DNS lookup*
+
+## Шаг 4 - Настройка f0/0
+
+<img width="609" height="133" alt="image" src="https://github.com/user-attachments/assets/f31db82c-7574-45fd-a8fa-0cfecb8f2116" />
+
+*Рис.4 Настройка f0/0*
+
+## Шаг 5 - Настройка DHCP-сервера
+
+<img width="414" height="58" alt="image" src="https://github.com/user-attachments/assets/c48e5ff5-ff59-40c2-b10f-0e06c53511b2" />
+
+*Рис.5 Настройка DHCP-сервера*
+
+## Шаг 6 - Настройка CallManager Express
+
+<img width="499" height="88" alt="image" src="https://github.com/user-attachments/assets/ced896ca-a980-4e7f-b64b-cc9170f17382" />
+
+*Рис.6 Настройка CallManager Express*
+
+## Шаг 7 - Настройка телефонов
+
+<img width="634" height="73" alt="image" src="https://github.com/user-attachments/assets/3ea3b165-84a9-4c6f-9d5b-92936a541dbd" />
+
+*Рис.7 Настройка телефона 1*
+
+<img width="626" height="73" alt="image" src="https://github.com/user-attachments/assets/2413605d-d5b2-439b-b793-f0a7004604f6" />
+
+*Рис.8 Настройка телефона 2*
+
+## Шаг 8 - Настройка коммутатора 
+
+<img width="468" height="87" alt="image" src="https://github.com/user-attachments/assets/be274067-0c96-40ff-a00c-2444bfad9591" />
+
+*Рис.9 Настройка коммутатора*
+
+## Шаг 9 - Проверка звонка
+
+<img width="1507" height="681" alt="image" src="https://github.com/user-attachments/assets/34db6319-f3e7-4dd4-8a3d-aefa02bee5f0" />
+
+*Рис.10 Проверка звонка*
+
+# Лабораторная работа №3. Настройка конфигурации Cisco CallManager Express на маршрутизаторе Cisco 2811
+## Шаг 1 - Создание топологии
+
+<img width="851" height="522" alt="image" src="https://github.com/user-attachments/assets/2c7e691a-686e-48b7-a8e1-286d4a68ec10" />
+
+*Рис.11 Создание топологии*
+
+## Шаг 2 - Назначение имени маршрутизатору
+
+<img width="443" height="75" alt="image" src="https://github.com/user-attachments/assets/e58231b1-714c-4635-bf2c-845d5a3aaba3" />
+
+*Рис.12 Назначение имени CMERouter*
+
+## Шаг 3 - Отключнеие DNS lookup
+
+<img width="280" height="15" alt="image" src="https://github.com/user-attachments/assets/7b5409f9-d5d2-4955-9796-45bf91dd7e4d" />
+
+*Рис.13 Отключнеие DNS lookup*
+
+## Шаг 4 - Настройка паролей
+
+<img width="309" height="166" alt="image" src="https://github.com/user-attachments/assets/0d4335e9-a8b1-48cd-bf90-2a6563768d3d" />
+
+*Рис.14 Настройка паролей*
+
+## Шаг 5 - Настройка f0/0
+
+<img width="605" height="119" alt="image" src="https://github.com/user-attachments/assets/aaa161f4-46c2-4aa7-b68f-3226b5528d24" />
+
+*Рис.15 Настройка f0/0*
+
+## Шаг 6 - Настройка DHCP и option 150
+
+<img width="430" height="61" alt="image" src="https://github.com/user-attachments/assets/cd467548-d173-43e6-9d86-58b55a033645" />
+
+*Рис.16 Настройка DHCP и option 150*
+
+## Шаг 7 - Настройка CallManager Express
+
+<img width="485" height="91" alt="image" src="https://github.com/user-attachments/assets/d3dbc857-f56e-46df-91eb-66761b984406" />
+
+*Рис.17 Настройка CallManager Express*
+
+## Шаг 8 - Настройка портов
+
+<img width="352" height="45" alt="image" src="https://github.com/user-attachments/assets/c527f459-48d5-4555-ba6b-0eb816e825a5" />
+
+*Рис.18 Настройка портов*
+
+## Шаг 9 - Создание номеров
+
+<img width="634" height="294" alt="image" src="https://github.com/user-attachments/assets/fdea0b1c-dba9-4ddc-931a-f3e7739a6463" />
+
+*Рис.19 Создание номеров*
+
+##Шаг 10 - Удаление уонфигурации телефона
+
+
+
+## Шаг 11 - Проверка звонка 
+
+<img width="1401" height="674" alt="image" src="https://github.com/user-attachments/assets/5675ad6a-4018-489b-978a-570b861b2a93" />
+
+*Рис.21 Проверка звонка 1*
+
+<img width="1305" height="675" alt="image" src="https://github.com/user-attachments/assets/6b9b1fd8-db51-46d8-b472-2fd83e176ca4" />
+
+*Рис.22 Проверка звонка 2*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
