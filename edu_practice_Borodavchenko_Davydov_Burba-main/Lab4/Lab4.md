@@ -234,3 +234,146 @@
 <img width="1340" height="473" alt="изображение" src="https://github.com/user-attachments/assets/fa451f49-a3b1-49b7-9da8-d4e8feb99a69" />
 
 *Рис.43 Проверка с 101 на 103*
+
+# Лабораторная работа №7. Построение сети IP-телефонии между удаленными маршрутизаторами в среде Cisco Packet Tracer
+## Шаг 1 - Создание топологии
+
+<img width="915" height="451" alt="изображение" src="https://github.com/user-attachments/assets/43acde4d-bf2f-4c00-9918-807bfc63469f" />
+
+*Рис.44 Создание топологии*
+
+## Шаг 2 - Переименование маршрутизатора
+
+<img width="437" height="85" alt="изображение" src="https://github.com/user-attachments/assets/20db8550-e315-4170-8a62-3c071efa1160" />
+
+*Рис.45 Переименование маршрутизатора*
+
+## Шаг 3 - Настройка паролей RouterA
+
+<img width="282" height="154" alt="изображение" src="https://github.com/user-attachments/assets/83c95cb2-a5d9-429d-bd1d-944323dc2443" />
+
+*Рис.46 Настройка паролей на RouterA*
+
+## Шаг 4 - Настройка интерфейса F0/0 на RouterA
+
+<img width="418" height="87" alt="изображение" src="https://github.com/user-attachments/assets/e4f9bed5-51a9-4dc0-b02a-f2db9b8d1aa1" />
+
+*Рис.47 Настройка интерфейса F0/0 на RouterA*
+
+## Шаг 5 - Настройка интерфейса S0/3/0 на RouterA
+
+<img width="618" height="193" alt="изображение" src="https://github.com/user-attachments/assets/4de5b208-b0cf-45d5-9fa4-3291c7daca6f" />
+
+*Рис.48 Настройка интерфейса S0/3/0 на RouterA*
+
+## Шаг 6 - Настройка DHCP-сервера на RouterA
+
+<img width="406" height="86" alt="изображение" src="https://github.com/user-attachments/assets/e7d166a3-7497-47e9-8fa7-84affedcc204" />
+
+*Рис.49 Настройка DHCP-сервера на RouterA*
+
+## Шаг 7 -  Настройка CallManager Express на RouterA
+
+<img width="471" height="100" alt="изображение" src="https://github.com/user-attachments/assets/21a7b82a-1d0a-4b3b-a5e2-ab6ee0c576b5" />
+
+*Рис.50 Настройка CallManager Express на RouterA*
+
+## Шаг 8 - Создание телефонных номеров на RouterA
+
+<img width="597" height="269" alt="изображение" src="https://github.com/user-attachments/assets/eef92a5e-7860-4e1a-9f65-d8711da04136" />
+
+*Рис.51 Создание телефонных номеров на RouterA*
+
+## Шаг 9 - Настройка динамической маршрутизации на RouterA
+
+<img width="322" height="105" alt="изображение" src="https://github.com/user-attachments/assets/9b5f27cf-6efc-4638-8530-347e42138627" />
+
+*Рис.52 Настройка динамической маршрутизации на RouterA*
+
+## Шаг 10 - Переименование switchA
+
+<img width="471" height="60" alt="изображение" src="https://github.com/user-attachments/assets/56dcc957-974e-49a0-b3a8-6a333e18b905" />
+
+*Рис.53 Переименование switchA*
+
+## Шаг 11 - Настройка итерфейсов на SwitchA
+
+<img width="361" height="58" alt="изображение" src="https://github.com/user-attachments/assets/cf943aa0-4336-4fbc-995d-1879fb622821" />
+
+*Рис.54 Настройка итерфейсов на SwitchA*
+
+## Шаг 12 - Проверка звонка внутри одной сети
+
+<img width="1399" height="705" alt="изображение" src="https://github.com/user-attachments/assets/61c80715-7945-4b43-a9c9-80b3cfc01520" />
+
+*Рис.55 Проверка звонка внутри одной сети*
+
+## Шаг 13 - Переименовывание RouterB
+
+<img width="443" height="60" alt="изображение" src="https://github.com/user-attachments/assets/fccd3d0d-818b-466d-9332-89527f085410" />
+
+*Рис.56 Переименовывание RouterB*
+
+## Шаг 14 - Настройка паролей на RouterB
+
+<img width="288" height="167" alt="изображение" src="https://github.com/user-attachments/assets/52245d64-c0bb-42a0-ba16-325229b67a35" />
+
+*Рис.57 Настройка паролей на RouterB*
+
+## Шаг 15 - Настройка f0/0 на RouterB
+
+<img width="408" height="53" alt="изображение" src="https://github.com/user-attachments/assets/863726cf-c50e-4940-b0d4-e47c402a0a4e" />
+
+*Рис.58 Настройка f0/0 на RouterB*
+
+## Шаг 16 - Настройка s0/3/0 на RouterB
+
+<img width="394" height="55" alt="изображение" src="https://github.com/user-attachments/assets/3b5b8f65-64ed-478f-97e4-8f731e113e65" />
+
+*Рис.59 Настройка s0/3/0 на RouterB*
+
+## Шаг 17 - Настройка DHCP на RouterB
+
+<img width="459" height="71" alt="изображение" src="https://github.com/user-attachments/assets/21cba32a-5915-462f-b4f3-f3b980b0bffb" />
+
+*Рис.60 Настройка DHCP на RouterB*
+
+## Шаг 18 - Настройка RIP на RouterB
+
+<img width="300" height="70" alt="изображение" src="https://github.com/user-attachments/assets/d376e14b-fd24-47e4-8dbf-d29c4f229c7a" />
+
+*Рис.61 Настройка RIP на RouterB*
+
+## Шаг 19 - Настройка CME на RouterB
+
+<img width="460" height="86" alt="изображение" src="https://github.com/user-attachments/assets/b4c30b8f-d142-40e6-b669-d644d1c7c5a6" />
+
+*Рис.62  Настройка CME на RouterB*
+
+## Шаг 20 - Настройка номеров на RouterB
+
+<img width="624" height="210" alt="изображение" src="https://github.com/user-attachments/assets/2e5bffec-1c95-406a-9a10-6d6ba77a5d00" />
+
+*Рис.63 Настройка номеров на RouterB*
+
+## Шаг 21 - Настройка имени и портов на SwitchB
+
+<img width="455" height="115" alt="изображение" src="https://github.com/user-attachments/assets/7e68b53a-da82-4b88-a82c-ae4374752bb8" />
+
+*Рис.64 Настройка имени и портов на SwitchB*
+
+## Шаг 22 - Проверка звонка 
+
+<img width="1352" height="639" alt="изображение" src="https://github.com/user-attachments/assets/ce02b891-2d56-43a7-943c-0b1ca4374b66" />
+
+*Рис.65 Проверка звонка*
+
+
+
+
+
+
+
+
+
+
