@@ -122,24 +122,115 @@
 
 *Рис.21 Проверка звонка 2*
 
+# Лабораторная работа №4. Конфигурация VOIP в среде Cisco Packet Tracer
+## Шаг 1 - создание топологии
 
+<img width="473" height="410" alt="изображение" src="https://github.com/user-attachments/assets/c5a29c3c-285b-4df5-bc38-69e2bb36fc3f" />
 
+*Рис.22 Создание топологии*
 
+## Шаг 2 - создание VLAN на SW
 
+<img width="254" height="125" alt="изображение" src="https://github.com/user-attachments/assets/006bb98f-f0b0-4438-a16d-1f447428acba" />
 
+*Рис.23 Создание VLAN*
 
+## Шаг 3 - Настройка VLAN 99 на SW*
 
+<img width="411" height="85" alt="изображение" src="https://github.com/user-attachments/assets/14735e2d-4a94-44fd-9265-f0d9c40dfb4c" />
 
+*Рис.24 Настройка vlan 99*
 
+## Шаг 4 - Создание шлюза по умолчанию
 
+<img width="336" height="18" alt="изображение" src="https://github.com/user-attachments/assets/2acdf1f0-8703-49c8-b301-c964847417fb" />
 
+*Рис.25 Создание шлюза по умолчанию*
 
+## Шаг 5 - Настройка trunk
 
+<img width="395" height="81" alt="изображение" src="https://github.com/user-attachments/assets/9513f74e-3777-4e28-a0ad-2737c95fbde3" />
 
+*Рис.26 Настройка trunk на SW*
 
+## Шаг 6 - Настройка портов под телефоны и компьютеры
 
+<img width="370" height="158" alt="изображение" src="https://github.com/user-attachments/assets/cab6fba4-6be8-4e98-afab-1b5b6fc1884f" />
 
+*Рис.27 Настройка портов*
 
+## Шаг 7 - Настройка подынтерфейсов
 
+<img width="215" height="30" alt="изображение" src="https://github.com/user-attachments/assets/80aebd29-368c-4cf8-a0d0-79a930b59662" />
 
+*Рис.28 Включение f0/0*
 
+<img width="626" height="143" alt="изображение" src="https://github.com/user-attachments/assets/e8d733b6-fe08-40f9-bee8-47ccea01ae56" />
+
+*Рис.29 Настройка f0/0.10*
+
+<img width="622" height="140" alt="изображение" src="https://github.com/user-attachments/assets/4d5fa69c-7d7d-4a93-8af3-8010dc6f1da2" />
+
+*Рис.30 Настройка f0/0.20*
+
+<img width="628" height="154" alt="изображение" src="https://github.com/user-attachments/assets/abb119f9-c02a-499e-90ab-1c41875fd4e8" />
+
+*Рис.31 Настройка f0/0.99*
+
+## Шаг 8 - Исключение адресов из DHCP*
+
+<img width="470" height="29" alt="изображение" src="https://github.com/user-attachments/assets/9f2b6dee-5486-4c3d-892e-b92d8a603c9e" />
+
+*Рис.32 Исключение адресов из DHCP*
+
+## Шаг 9 - Настройка DHCP
+
+<img width="394" height="55" alt="изображение" src="https://github.com/user-attachments/assets/28676b94-085a-430a-9bd1-72ad62e53c35" />
+
+*Рис.33 Настройка Data*
+
+<img width="388" height="84" alt="изображение" src="https://github.com/user-attachments/assets/b947f488-3dab-4e72-ada3-185a8bd82c80" />
+
+*Рис.34 Настрйока Voice*
+
+## Шаг 10 - Настрйока CME
+
+<img width="475" height="84" alt="изображение" src="https://github.com/user-attachments/assets/b017590f-a872-4663-86e9-0b47d71b99e1" />
+
+*Рис.35 Настройка CME*
+
+## Шаг 11 - Присвоение номеров и MAC-адресов
+
+<img width="574" height="54" alt="изображение" src="https://github.com/user-attachments/assets/7fd9745d-3215-4480-ba9a-1da3b2ca2339" />
+
+*Рис.36 Присваиваем 1 номер*
+
+<img width="270" height="32" alt="изображение" src="https://github.com/user-attachments/assets/e75e3619-d255-4e62-9c75-481cddd2f605" />
+
+*Рис.37 Присваиваем 2 номер*
+
+<img width="527" height="72" alt="изображение" src="https://github.com/user-attachments/assets/7e7f1c32-dc0e-4e8a-bae1-efadd829a612" />
+
+*Рис.38 Присваиваем 3 номер*
+
+<img width="363" height="55" alt="изображение" src="https://github.com/user-attachments/assets/d1710fdd-86d8-4c6e-956d-34d5cd5b7ffe" />
+
+*Рис.39 Задаем MAC-адрес 1 номеру*
+
+<img width="349" height="44" alt="изображение" src="https://github.com/user-attachments/assets/22daf85c-64f3-49fc-b351-f0395de36f2a" />
+
+*Рис.40 Задаем MAC-адрес 2 номеру*
+
+<img width="370" height="134" alt="изображение" src="https://github.com/user-attachments/assets/25d34dcf-5c7b-4715-ad65-1fc7259a5a0f" />
+
+*Рис.41 Задаем MAC-адрес 3 номеру*
+
+## Шаг 12 - Проверка на телефонах
+
+<img width="1233" height="445" alt="изображение" src="https://github.com/user-attachments/assets/45570311-dcde-46d1-8c57-4a56c0393f5b" />
+
+*Рис.42 Проверка с 101 на 102*
+
+<img width="1340" height="473" alt="изображение" src="https://github.com/user-attachments/assets/fa451f49-a3b1-49b7-9da8-d4e8feb99a69" />
+
+*Рис.43 Проверка с 101 на 103*
