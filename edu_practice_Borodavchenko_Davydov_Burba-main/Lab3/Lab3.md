@@ -235,3 +235,86 @@ echo "Произведение: $((a * b))"
 # 12 sort.sh
 
 ```
+#!/bin/bash
+
+for arg in "$@"; do
+    echo "$arg"
+done
+```
+
+<img width="298" height="63" alt="изображение" src="https://github.com/user-attachments/assets/6759b123-3dd8-49b7-984a-24d9afba231f" />
+
+*Рис.14 Вывод аргументов*
+
+# 13 io.sh
+
+```
+#!/bin/bash
+
+case "$1" in
+    start) echo "Starting..." ;;
+    stop)  echo "Stopping..." ;;
+    *)     echo "Используй: $0 {start|stop}" ;;
+esac
+```
+
+<img width="242" height="86" alt="изображение" src="https://github.com/user-attachments/assets/4b57897f-6122-49d0-a3b5-ac992d3265c7" />
+
+*Рис.15 Прием аргументов*
+
+# 14 user_use.sh
+
+```
+#!/bin/bash
+
+du -sk /home/* 2>/dev/null | sort -nr | while read size dir; do
+    user=$(basename "$dir")
+    echo "$user — $size КБ"
+done
+```
+
+<img width="302" height="56" alt="изображение" src="https://github.com/user-attachments/assets/aba09ae7-cfa8-4eff-8681-430c65d4231d" />
+
+*Рис.16 Вывод пользователя по занятому месту*
+
+# 15 sort_du.sh
+
+```
+#!/bin/bash
+
+dir=${1:-.}
+find "$dir" -maxdepth 1 -type f -exec stat -c "%x %n" {} + | sort | head -n 3
+```
+
+<img width="465" height="77" alt="изображение" src="https://github.com/user-attachments/assets/a0473ae3-796f-46c4-86a8-f68d1a8a1d6f" />
+
+*Рис.17 Вывод 3 самый последних файлов*
+
+# 16 dir_info.sh
+
+```
+#!/bin/bash
+
+dir="${1:-.}"
+size=$(du -sk "$dir" | awk '{print $1}')
+echo "Общий размер: $size КВ"
+```
+
+<img width="288" height="52" alt="изображение" src="https://github.com/user-attachments/assets/7d28dfd9-a269-4674-9ea5-3d5dca943040" />
+
+*Рис.18 Вывод общего размера в кб*
+
+# 17 bash_history.sh
+
+```
+#!/bin/bash
+history -a
+cat ~/.bash_history | awk "{print \$1" | sort | uniq -c | sort -nr | head -n 5 > bash_history.sh
+```
+
+<img width="204" height="110" alt="изображение" src="https://github.com/user-attachments/assets/95b0c639-27a1-44f1-be36-4aaf46674c1a" />
+
+*Рис.19 Вывод 5 самых используемых команд*
+
+
+
