@@ -325,7 +325,7 @@ R3:
 
 ## Шаг 5 - Настройка area на R3
 
-<img width="257" height="14" alt="изображение" src="https://github.com/user-attachments/assets/ff2ba561-805c-4686-b5d7-8d22c6f9d4b7" />
+<img width="254" height="28" alt="image" src="https://github.com/user-attachments/assets/4efeff7b-34fb-4d57-a611-70945ddfc911" />
 
 *Рис.57 Настройка area на R3*
 
