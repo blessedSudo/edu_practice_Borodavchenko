@@ -1,7 +1,7 @@
 # Часть 1
 ## Шаг 1 - Создание топология сети
 
-<img width="1540" height="524" alt="image" src="https://github.com/user-attachments/assets/71b63794-0711-4bd7-aa4e-c6542669dcc1" />
+<img width="1597" height="543" alt="image" src="https://github.com/user-attachments/assets/fc5d9aac-e825-4470-95df-a5e86e175641" />
 
 *Рис.1 Топология сети*
 
