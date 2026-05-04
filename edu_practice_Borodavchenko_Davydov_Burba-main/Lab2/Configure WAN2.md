@@ -1,17 +1,17 @@
 # Часть 1
-## Шаг 1 - Топология сети
+## Шаг 1 - Создание топология сети
 
 <img width="1540" height="524" alt="image" src="https://github.com/user-attachments/assets/71b63794-0711-4bd7-aa4e-c6542669dcc1" />
 
 *Рис.1 Топология сети*
 
-## Шаг 2 - Настройка R1
+## Шаг 2 - Настройка интерфейсов f0/0 и f0/1 на маршрутизаторе R1
 
 <img width="398" height="88" alt="image" src="https://github.com/user-attachments/assets/1661217b-a95a-4d3f-a684-e96940971412" />
 
 *Рис.2 Настройка R1*
 
-## Шаг 3 - Настройка R2
+## Шаг 3 - Настройка интерфейсов f0/0 и f0/1 на маршрутизаторе R2
 
 <img width="618" height="244" alt="image" src="https://github.com/user-attachments/assets/3a888568-4e81-4907-b815-5e505ef9332f" />
 
